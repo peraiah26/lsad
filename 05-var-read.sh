@@ -1,6 +1,9 @@
 #!/bin/bash
 
-echo " please enter the password:"
-read  PASSWORD 
+SC="PASSWORD"
 
-echo "the password is: $PASSWORD"
+echo " please enter the password:"
+
+read  -s  PASSWORD 
+
+echo "the password is: $SC"

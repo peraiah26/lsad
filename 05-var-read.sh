@@ -4,6 +4,6 @@ SC="PASSWORD"
 
 echo " please enter the password:"
 
-read  -s  PASSWORD 
+read  -s  SC 
 
 echo "the password is: $SC"

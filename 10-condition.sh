@@ -13,3 +13,5 @@ elif [ $NUMBER -eq 20 ]; then
 else
 
     echo "THE GIVEN NUMBER $NUMBER IS GREATER TAHN 20"
+
+fi

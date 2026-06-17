@@ -2,11 +2,11 @@
 
 NUMBER=$1
 
-if [ NUMBER -lt 20 ]; then
+if [ $NUMBER -lt 20 ]; then
 
     echo "THE GIVEN NUMBER $NUMBER IS LESS THAN 20"
 
-else if [ NUMBER -eq 20 ]; then
+else if [ $NUMBER -eq 20 ]; then
 
     echo "THE GIVEN NUMBER $NUMBER IS EQUAL TO 20"
 

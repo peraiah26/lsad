@@ -1,8 +1,8 @@
 #!/bin/bash
 
-NUMBER=$1
-NUMBER=$2
+NUMBER1=$1
+NUMBER2=$2
 
-TOTAL=$(($NUMBER + $NUMBER))
+TOTAL=$((NUMBER1+NUMBER2))
 
 echo "addition of teo numbers= $TOTAL"

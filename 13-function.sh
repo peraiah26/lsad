@@ -7,9 +7,10 @@ if [ $USERID -ne 0 ]; then
     echo "ERROR:: PLEASE RUN THE SCCRIPT ROOT PRIVILLAGES"
     exit 1
 
-f1
+fi
 
-validate(){
+validate()
+{
 if [ $1 -ne 0 ]; then
 
     echo "package installation $2 is failure"
@@ -21,12 +22,12 @@ fi
 }
 
 dnf install nginx -y
-validate() $? "nginx"
+validate $? "nginx"
 
 dnf install mysql -y
-validate() $? "mysql"
+validate $? "mysql"
 
 dnf install python -y
-validate() $? "python"
+validate $? "python"
 
 

@@ -5,3 +5,10 @@ for package in ${PACKAGES[@]}
 do 
     dnf install $package -y 
 done
+
+ NAMES=("PERAIAH" "LINUX" "AWS" "CLOUD")
+
+ for name in ${NAMES[@]}
+ do
+    echo $NAMES
+done

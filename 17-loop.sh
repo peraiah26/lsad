@@ -10,5 +10,5 @@ done
 
  for name in ${NAMES[@]}
  do
-    echo $NAMES
+    echo $name
 done

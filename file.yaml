@@ -6,4 +6,4 @@
   - name: files
     ansible.builtin.file:
       path: /home/ec2-user/lsad/raj.txt
-      state: file
+      state: touch

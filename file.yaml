@@ -5,5 +5,5 @@
   tasks:
   - name: files
     ansible.builtin.file:
-      path: /home/ec2-user/lsad
+      path: /home/ec2-user/lsad/peraiah
       state: file

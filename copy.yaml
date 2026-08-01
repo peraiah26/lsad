@@ -1,0 +1,10 @@
+- name: backup using copy files
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name: copy
+    ansible.builtin.copy:
+      src: /home/ec2-user/lsad/loop.sh
+      dest: /home/ec2-user/lsad/empty.yaml
+      backup: yes

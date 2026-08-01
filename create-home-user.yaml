@@ -1,0 +1,10 @@
+- name: creating user with home directory
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name: home directory
+    ansible.builtin.user:
+      name: prakash
+      create_home: yes
+      state: yes

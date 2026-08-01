@@ -8,8 +8,6 @@
       name: rain
       state: present
       create_home: yes
-      uid: 1011
-      gid: 1035
       groups: wheel,peraiah
       append: yes
       shell: /bin/bash

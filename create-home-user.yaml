@@ -7,4 +7,4 @@
     ansible.builtin.user:
       name: prakash
       create_home: yes
-      state: yes
+      state: present

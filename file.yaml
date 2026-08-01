@@ -1,0 +1,9 @@
+- name: creating files
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name: files
+    ansible.builtin.file:
+      path: /home/ec2-user/lsad
+      state: file

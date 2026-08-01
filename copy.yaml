@@ -5,6 +5,6 @@
   tasks:
   - name: copy
     ansible.builtin.copy:
-      src: /home/ec2-user/lsad/loop.sh
+      src: /home/ec2-user/lsad/17-loop.sh
       dest: /home/ec2-user/lsad/empty.yaml
       backup: yes

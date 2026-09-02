@@ -7,7 +7,7 @@
     ansible.builtin.file:
       path: /home/ec2-user/lsad/got
       state: touch
-    notify: add data
+    notify: Add data
 
   handlers:
     - name: Add data

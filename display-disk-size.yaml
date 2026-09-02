@@ -9,4 +9,4 @@
 
   - name: display disk size
     ansible.builtin.debug:
-      var: disk_size.stdout
+      msg: "disk usage size is {{ disk_size.stdout }}"

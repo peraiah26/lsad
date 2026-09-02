@@ -6,7 +6,8 @@
   - name: creatin user
     ansible.builtin.file:
       path: /home/ec2-user/lsad/got
-    notify: append data
+      state: touch
+    notify: add data
 
   handlers:
     - name: Add data

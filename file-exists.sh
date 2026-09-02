@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -f "linux" ];
+if [ -f "dir.yaml" ];
 then
     echo "file exists"
 else

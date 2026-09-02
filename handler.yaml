@@ -1,0 +1,16 @@
+- name: creating handler example
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name: creatin user
+    ansible.builtin.file:
+      path: /home/ec2-user/lsad/got
+    notify: append data
+    
+  handlers:
+    - name: Add data
+      ansible.builtin.lineinfile:
+        path: /tmp/test.txt
+        line: "Hello Linux"
+     

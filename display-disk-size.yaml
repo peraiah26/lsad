@@ -1,0 +1,12 @@
+- name: display disk size using register
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name: disk size
+    ansible.builtin.command: df -h 
+    register: disk_size
+
+  - name: display disk size
+    ansible.builtin.debug:
+      var: disk_size

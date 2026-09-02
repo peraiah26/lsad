@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for touch in file1 file2
+for i in {1..3}
 do
-    echo "file1 is created"
+    touch file$i
 done 
